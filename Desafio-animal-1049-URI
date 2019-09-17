@@ -1,0 +1,59 @@
+animal = [{
+    'classificacao' : 'vertebrado',
+    'tipo' : 'ave',
+    'reino' : 'carnivoro',
+    'animal' : 'aguia'
+},
+{
+    'classificacao' : 'vertebrado',
+    'tipo' : 'ave',
+    'reino' : 'onivoro',
+    'animal' : 'pomba'
+},
+{
+    'classificacao' : 'vertebrado',
+    'tipo' : 'mamifero',
+    'reino' : 'onivoro',
+    'animal' : 'homem'
+},
+{
+    'classificacao' : 'vertebrado',
+    'tipo' : 'maifero',
+    'reino' : 'herbivoro',
+    'animal' : 'vaca'
+},
+{
+    'classificacao' : 'invertebrado',
+    'tipo' : 'inseto',
+    'reino' : 'hematofago',
+    'animal' : 'pulga'
+},
+{
+    'classificacao' : 'invertebrado',
+    'tipo' : 'inseto',
+    'reino' : 'herbivoro',
+    'animal' : 'lagarta'
+},
+{
+    'classificacao' : 'invertebrado',
+    'tipo' : 'anelideo',
+    'reino' : 'hematofago',
+    'animal' : 'sanguessuga'
+},
+{
+    'classificacao' : 'invertebrado',
+    'tipo' : 'anelideo',
+    'reino' : 'onivoro',
+    'animal' : 'minhoca'
+}]
+
+classificacao = input('Digite a classificação(vertebrado/invertebrado):')
+tipo = input('Digite o tipo(ave/mamifero/inseto/anelideo):')
+reino = input('Digite o reino (carnivoro/onivoro/herbivoro/hematofago):')
+
+for item in animal:
+    if item['classificacao'] == classificacao and item['tipo'] == tipo and item['reino'] == reino:
+        print(item['animal'])
+        break
+else:
+    print('Não existe animal correspondente')
