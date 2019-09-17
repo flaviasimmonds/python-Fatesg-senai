@@ -1,0 +1,44 @@
+dados = {
+   "nome": "Francisco",
+   "endereco": "Rua 2",
+   "telefones": ["3231-1212","3231-1213","3231-1214"]
+}
+
+print(dados['nome'])
+print(dados['endereco'])
+print(dados['telefones'][1])
+
+
+dados['ativo'] = True
+
+print(dados)
+
+#saida
+{'nome': 'Francisco', 'endereco': 'Rua 2', 'telefones': ['3231-1212', '3231-1213', '3231-1214'], 'ativo': True}
+
+
+#Exclusao de elementos
+dados['endereco'] = 'Rua 2'
+dados.pop('endereco')
+print(dados)
+
+
+#saida
+{'nome': 'Francisco', 'telefones': ['3231-1212', '3231-1213', '3231-1214'], 'ativo': True, 'cores': ['amarelo', 'verde', 'azul']}
+
+
+#Alteração do nome
+dados['nome'] = 'Francisco Calaça'
+print(dados)
+
+
+#saida
+{'nome': 'Francisco Calaça', 'telefones': ['3231-1212', '3231-1213', '3231-1214'], 'ativo': True, 'cores': ['amarelo', 'verde', 'azul']}
+
+
+
+dados['telefones'].pop(-1)
+print(dados)
+
+#saida
+{'nome': 'Francisco Calaça', 'telefones': ['3231-1212'], 'ativo': True, 'cores': ['amarelo', 'verde', 'azul']}
