@@ -1,0 +1,29 @@
+dados = {
+    'vertebrado':{
+        'ave':{
+            'carnivoro':'aguia',
+            'onivoro':'pomba'
+        },
+        'mamifero':{
+            'onivoro': 'homem',
+            'herbivoro': 'vaca'
+        }
+    },
+    'invertebrado':{
+        'inseto':{
+            'hematofago': 'pulga',
+            'herbivoro': 'lagarta'
+        },
+        'anelideo':{
+            'hematofago': 'sanguessuga',
+            'onivoro': 'minhoca'
+        }
+    }
+
+}
+
+p1 = input()
+p2 = input()
+p3 = input()
+
+print(dados[p1][p2][p3])
