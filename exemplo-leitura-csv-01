@@ -1,0 +1,9 @@
+import csv
+
+with open('data/purchases.csv') as arq:
+    dados = csv.reader(arq, delimiter = ',')
+    print(dados)
+    for row in dados:
+        print(f'{row[0]} - {row[1]} - {row[2]}')
+        
+arq.close()  
