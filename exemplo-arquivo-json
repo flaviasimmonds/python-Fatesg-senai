@@ -1,0 +1,14 @@
+import json
+
+
+data = {}
+resposta = 's'
+
+while  resposta =='s':
+    chave = input('Digite a chave:')
+    valor = input('digite o valor:')
+    data[chave] = valor
+    resposta = input('continuar(s/n)')
+    
+with open ('data/saida.json','w') as arq:
+    json.dump(data,arq)
