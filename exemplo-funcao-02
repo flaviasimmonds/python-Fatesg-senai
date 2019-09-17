@@ -1,0 +1,10 @@
+v = int(input('Digite um valor'))
+q = int(input('Digite o quociente'))
+
+try:
+    r = v / q
+    print(r)
+except:    
+    raise Exception('Nao é possivel realizar a divisão')
+else:  
+    print('done')
