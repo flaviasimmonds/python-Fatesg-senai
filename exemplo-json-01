@@ -1,0 +1,6 @@
+import json
+
+with open('data/purchases.json') as arq:
+    dados = json.load(arq)
+    print(dados)
+    print(dados['apples']['June'])
