@@ -1,0 +1,7 @@
+arq = open('data/purchases.csv')
+dados = csv.reader(arq, delimiter = ',')
+for row in dados:
+    for d in row:
+        print(d, end = ',')
+    print()
+arq.close()
