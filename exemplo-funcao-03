@@ -1,0 +1,24 @@
+def fatorial(n):
+    r = 1
+    for i in range(1, n+1):
+        r = r * i
+    return r
+        
+        
+ def imprimir(r):
+    print('=================')
+    print(f'Resultado: {r}')
+    
+    
+imprimir(fatorial(3))
+
+#saida
+=================
+Resultado: 6
+
+
+imprimir(fatorial(5))
+#saida
+
+=================
+Resultado: 120
